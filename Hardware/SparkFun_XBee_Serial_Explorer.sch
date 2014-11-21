@@ -23461,6 +23461,17 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="THERMISTOR1206" package="PTC-1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08585" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="V_REG_LM1117" prefix="IC" uservalue="yes">
@@ -23717,7 +23728,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+4" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="F1" library="SparkFun-PowerIC" deviceset="PTC" device="SMD"/>
+<part name="F1" library="SparkFun-PowerIC" deviceset="PTC" device="THERMISTOR1206" value="PTCTHERMISTOR1206"/>
 <part name="P+5" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="GND11" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -23825,7 +23836,10 @@ board to DTE configuration.</text>
 <instance part="GND9" gate="1" x="187.96" y="152.4"/>
 <instance part="P+4" gate="G$1" x="238.76" y="175.26"/>
 <instance part="GND10" gate="1" x="134.62" y="152.4"/>
-<instance part="F1" gate="G$1" x="152.4" y="165.1"/>
+<instance part="F1" gate="G$1" x="152.4" y="165.1" smashed="yes">
+<attribute name="NAME" x="149.86" y="168.148" size="1.778" layer="95"/>
+<attribute name="VALUE" x="165.862" y="162.56" size="1.778" layer="96" rot="R180"/>
+</instance>
 <instance part="P+5" gate="G$1" x="226.06" y="170.18"/>
 <instance part="GND11" gate="1" x="83.82" y="109.22"/>
 <instance part="GND12" gate="1" x="58.42" y="149.86"/>
