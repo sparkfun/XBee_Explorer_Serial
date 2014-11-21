@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -2010,6 +2010,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-1.27" y="-1.905" size="0.4064" layer="27">&gt;VALUE</text>
 <wire x1="0" y1="0" x2="0.635" y2="0" width="0.2032" layer="1"/>
 </package>
+<package name="TP_15TH">
+<pad name="P$1" x="0" y="0" drill="0.381" diameter="0.6096" stop="no"/>
+<circle x="0" y="0" radius="0.381" width="0" layer="30"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -2357,6 +2361,12 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="SWCH-08179" x="52.705" y="27.305" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 </element>
 <element name="LOGO3" library="SparkFun-Aesthetics" package="SFE_LOGO_FLAME_.1" value="SFE_LOGO_FLAME.1_INCH" x="6.604" y="1.3208"/>
+<element name="TP1" library="SparkFun-Passives" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="25.4" y="19.05"/>
+<element name="TP2" library="SparkFun-Passives" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="24.13" y="17.78"/>
+<element name="TP3" library="SparkFun-Passives" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="11.43" y="35.56"/>
+<element name="TP4" library="SparkFun-Passives" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="21.59" y="35.56"/>
+<element name="TP5" library="SparkFun-Passives" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="16.51" y="30.48"/>
+<element name="TP6" library="SparkFun-Passives" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="52.07" y="43.18"/>
 </elements>
 <signals>
 <signal name="GND" class="1">
@@ -2407,7 +2417,8 @@ design rules under a new name.</description>
 <wire x1="32.82" y1="15.94" x2="32.82" y2="17.58" width="0.254" layer="1"/>
 <wire x1="32.82" y1="17.58" x2="35.56" y2="20.32" width="0.254" layer="1"/>
 <contactref element="S3" pad="2"/>
-<wire x1="42.926" y1="13.335" x2="48.514" y2="13.335" width="0" layer="19" extent="1-1"/>
+<wire x1="42.926" y1="13.335" x2="48.514" y2="13.335" width="0.254" layer="1"/>
+<wire x1="48.895" y1="13.335" x2="48.514" y2="13.335" width="0.254" layer="1"/>
 </signal>
 <signal name="RAW" class="1">
 <contactref element="JP3" pad="11"/>
@@ -2752,14 +2763,17 @@ design rules under a new name.</description>
 <signal name="N$15">
 <contactref element="D1" pad="A"/>
 <contactref element="JP4" pad="PWR"/>
-<wire x1="54.61" y1="41.52" x2="51.5878" y2="41.52" width="0.254" layer="1"/>
-<wire x1="51.5878" y1="41.52" x2="46.99" y2="36.9222" width="0.254" layer="1"/>
+<contactref element="TP6" pad="P$1"/>
+<wire x1="52.07" y1="43.18" x2="52.07" y2="41.52" width="0.3048" layer="1"/>
+<wire x1="46.99" y1="36.9222" x2="47.4722" y2="36.9222" width="0.3048" layer="1"/>
+<wire x1="47.4722" y1="36.9222" x2="52.07" y2="41.52" width="0.3048" layer="1"/>
+<wire x1="52.07" y1="41.52" x2="54.61" y2="41.52" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$16">
 <contactref element="D1" pad="C"/>
 <contactref element="F1" pad="1"/>
-<wire x1="54.61" y1="37.22" x2="54.61" y2="34.42" width="0.254" layer="1"/>
-<wire x1="54.61" y1="34.42" x2="54.74" y2="34.29" width="0.254" layer="1"/>
+<wire x1="54.61" y1="37.22" x2="54.61" y2="34.42" width="0.3048" layer="1"/>
+<wire x1="54.61" y1="34.42" x2="54.74" y2="34.29" width="0.3048" layer="1"/>
 </signal>
 <signal name="RS232-RTS">
 <contactref element="JP1" pad="7"/>
@@ -2769,6 +2783,9 @@ design rules under a new name.</description>
 <wire x1="20.21" y1="29.32" x2="25.527" y2="24.003" width="0.254" layer="16"/>
 <wire x1="20.21" y1="40.79" x2="20.21" y2="29.32" width="0.254" layer="16"/>
 <via x="25.527" y="24.003" extent="1-16" drill="0.508"/>
+<contactref element="TP1" pad="P$1"/>
+<wire x1="26.035" y1="22.6" x2="26.035" y2="19.685" width="0.254" layer="1"/>
+<wire x1="26.035" y1="19.685" x2="25.4" y2="19.05" width="0.254" layer="1"/>
 </signal>
 <signal name="RS232-CTS">
 <contactref element="JP1" pad="8"/>
@@ -2780,6 +2797,10 @@ design rules under a new name.</description>
 <wire x1="22.97" y1="40.79" x2="22.97" y2="27.83" width="0.254" layer="16"/>
 <wire x1="22.97" y1="27.83" x2="25.4" y2="25.4" width="0.254" layer="16"/>
 <via x="25.4" y="25.4" extent="1-16" drill="0.508"/>
+<contactref element="TP2" pad="P$1"/>
+<wire x1="24.765" y1="22.6" x2="24.765" y2="20.32" width="0.254" layer="1"/>
+<wire x1="24.765" y1="20.32" x2="24.13" y2="19.685" width="0.254" layer="1"/>
+<wire x1="24.13" y1="19.685" x2="24.13" y2="17.78" width="0.254" layer="1"/>
 </signal>
 <signal name="RS232-DTR">
 <contactref element="JP1" pad="4"/>
@@ -2788,8 +2809,11 @@ design rules under a new name.</description>
 <wire x1="22.86" y1="43.18" x2="24.36" y2="41.68" width="0.254" layer="1"/>
 <wire x1="15.24" y1="43.18" x2="22.86" y2="43.18" width="0.254" layer="1"/>
 <wire x1="13.335" y1="41.275" x2="15.24" y2="43.18" width="0.254" layer="1"/>
-<wire x1="13.335" y1="41.275" x2="13.335" y2="34.505" width="0.254" layer="1"/>
+<wire x1="13.335" y1="41.275" x2="13.335" y2="35.56" width="0.254" layer="1"/>
+<wire x1="13.335" y1="35.56" x2="13.335" y2="34.505" width="0.254" layer="1"/>
 <wire x1="13.335" y1="34.505" x2="13.55" y2="34.29" width="0.254" layer="1"/>
+<contactref element="TP3" pad="P$1"/>
+<wire x1="11.43" y1="35.56" x2="13.335" y2="35.56" width="0.254" layer="1"/>
 </signal>
 <signal name="RS232-RX">
 <contactref element="JP1" pad="3"/>
@@ -2797,15 +2821,18 @@ design rules under a new name.</description>
 <contactref element="SJ1" pad="1"/>
 <wire x1="18.5928" y1="33.02" x2="18.5928" y2="34.9528" width="0.254" layer="1"/>
 <wire x1="18.5928" y1="34.9528" x2="21.59" y2="37.95" width="0.254" layer="1"/>
-<wire x1="22.6822" y1="33.02" x2="22.6822" y2="36.8578" width="0.254" layer="1"/>
+<wire x1="22.6822" y1="33.02" x2="22.6822" y2="35.56" width="0.254" layer="1"/>
+<wire x1="22.6822" y1="35.56" x2="22.6822" y2="36.8578" width="0.254" layer="1"/>
 <wire x1="22.6822" y1="36.8578" x2="21.59" y2="37.95" width="0.254" layer="1"/>
+<contactref element="TP4" pad="P$1"/>
+<wire x1="21.59" y1="35.56" x2="22.6822" y2="35.56" width="0.254" layer="1"/>
 </signal>
 <signal name="DTR">
 <contactref element="R2" pad="1"/>
 <contactref element="Q1" pad="3"/>
 <contactref element="U2" pad="9"/>
 <contactref element="JP2" pad="2"/>
-<wire x1="24.765" y1="21.59" x2="27.94" y2="21.59" width="0.254" layer="16"/>
+<wire x1="23.495" y1="21.59" x2="27.94" y2="21.59" width="0.254" layer="16"/>
 <via x="15.24" y="30.48" extent="1-16" drill="0.508"/>
 <wire x1="32.82" y1="23.94" x2="32.82" y2="27.74" width="0.254" layer="1"/>
 <wire x1="32.82" y1="27.74" x2="35.56" y2="30.48" width="0.254" layer="1"/>
@@ -2813,13 +2840,13 @@ design rules under a new name.</description>
 <wire x1="13.8" y1="30.48" x2="13.8" y2="29.46" width="0.254" layer="1"/>
 <wire x1="13.8" y1="29.46" x2="13.55" y2="29.21" width="0.254" layer="1"/>
 <wire x1="15.24" y1="30.48" x2="13.8" y2="30.48" width="0.254" layer="1"/>
-<wire x1="24.765" y1="21.59" x2="15.875" y2="30.48" width="0.254" layer="16"/>
-<wire x1="15.875" y1="30.48" x2="15.24" y2="30.48" width="0.254" layer="16"/>
 <wire x1="27.94" y1="21.59" x2="29.21" y2="21.59" width="0.3048" layer="16"/>
 <wire x1="29.21" y1="21.59" x2="31.115" y2="23.495" width="0.3048" layer="16"/>
 <wire x1="31.115" y1="23.495" x2="31.115" y2="27.94" width="0.3048" layer="16"/>
 <wire x1="31.115" y1="27.94" x2="33.655" y2="30.48" width="0.3048" layer="16"/>
 <wire x1="33.655" y1="30.48" x2="35.56" y2="30.48" width="0.3048" layer="16"/>
+<wire x1="23.495" y1="21.59" x2="15.24" y2="29.845" width="0.254" layer="16"/>
+<wire x1="15.24" y1="29.845" x2="15.24" y2="30.48" width="0.254" layer="16"/>
 </signal>
 <signal name="N$10">
 <contactref element="U3" pad="1"/>
@@ -2835,9 +2862,11 @@ design rules under a new name.</description>
 <signal name="N$11">
 <contactref element="F1" pad="2"/>
 <contactref element="S1" pad="5"/>
-<wire x1="51.94" y1="34.29" x2="51.94" y2="28.07" width="0.254" layer="1"/>
-<wire x1="51.94" y1="28.07" x2="52.705" y2="27.305" width="0.254" layer="1"/>
-<wire x1="52.705" y1="27.305" x2="55.53" y2="27.305" width="0.254" layer="1"/>
+<wire x1="51.94" y1="34.29" x2="51.94" y2="32.515" width="0.3048" layer="1"/>
+<wire x1="51.94" y1="32.515" x2="53.975" y2="30.48" width="0.3048" layer="1"/>
+<wire x1="53.975" y1="30.48" x2="53.975" y2="27.94" width="0.3048" layer="1"/>
+<wire x1="53.975" y1="27.94" x2="54.61" y2="27.305" width="0.3048" layer="1"/>
+<wire x1="54.61" y1="27.305" x2="55.53" y2="27.305" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$12">
 <contactref element="Q1" pad="1"/>
@@ -2876,12 +2905,16 @@ design rules under a new name.</description>
 <wire x1="22.86" y1="38.735" x2="22.86" y2="37.465" width="0.254" layer="1"/>
 <wire x1="22.86" y1="37.465" x2="24.3078" y2="36.0172" width="0.254" layer="1"/>
 <wire x1="24.3078" y1="33.02" x2="24.3078" y2="36.0172" width="0.254" layer="1"/>
+<contactref element="TP5" pad="P$1"/>
+<wire x1="16.9672" y1="33.02" x2="16.9672" y2="30.9372" width="0.254" layer="1"/>
+<wire x1="16.9672" y1="30.9372" x2="16.51" y2="30.48" width="0.254" layer="1"/>
 </signal>
 </signals>
 <errors>
 <approved hash="19,1,29ef9b6fdce7870a"/>
 <approved hash="5,1,00e29a3dbd6ae0c4"/>
 <approved hash="19,1,12f5386649db25d0"/>
+<approved hash="19,1,34b35915c280ef5e"/>
 <approved hash="5,1,00e29a31f566a8c4"/>
 <approved hash="5,1,96c7619b58b129ef"/>
 <approved hash="19,1,10cc058d39fe9247"/>
