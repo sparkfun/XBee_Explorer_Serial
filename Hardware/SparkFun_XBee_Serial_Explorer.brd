@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -184,7 +184,7 @@
 <dimension x1="0" y1="0" x2="57.15" y2="0" x3="28.575" y3="-5.2832" textsize="1.4224" textratio="15" layer="47" visible="yes"/>
 <dimension x1="5.08" y1="7.62" x2="5.08" y2="33.02" x3="-14.5288" y3="20.32" textsize="1.4224" textratio="15" layer="47" visible="yes"/>
 <dimension x1="2.54" y1="2.54" x2="54.1528" y2="2.6416" x3="28.3568" y3="-2.692378125" textsize="1.4224" textratio="15" layer="47" visible="yes"/>
-<text x="53.1114" y="14.0208" size="1.27" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">XBee
+<text x="52.7939" y="14.0208" size="1.1938" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">XBee
 Explorer
 Serial
 </text>
@@ -2363,8 +2363,8 @@ design rules under a new name.</description>
 <element name="LOGO3" library="SparkFun-Aesthetics" package="SFE_LOGO_FLAME_.1" value="SFE_LOGO_FLAME.1_INCH" x="6.604" y="1.3208"/>
 <element name="TP1" library="SparkFun-Passives" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="25.4" y="19.05"/>
 <element name="TP2" library="SparkFun-Passives" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="24.13" y="17.78"/>
-<element name="TP3" library="SparkFun-Passives" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="11.43" y="35.56"/>
-<element name="TP4" library="SparkFun-Passives" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="21.59" y="35.56"/>
+<element name="TP3" library="SparkFun-Passives" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="8.89" y="34.29"/>
+<element name="TP4" library="SparkFun-Passives" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="21.59" y="34.29"/>
 <element name="TP5" library="SparkFun-Passives" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="16.51" y="30.48"/>
 <element name="TP6" library="SparkFun-Passives" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="52.07" y="43.18"/>
 </elements>
@@ -2813,7 +2813,8 @@ design rules under a new name.</description>
 <wire x1="13.335" y1="35.56" x2="13.335" y2="34.505" width="0.254" layer="1"/>
 <wire x1="13.335" y1="34.505" x2="13.55" y2="34.29" width="0.254" layer="1"/>
 <contactref element="TP3" pad="P$1"/>
-<wire x1="11.43" y1="35.56" x2="13.335" y2="35.56" width="0.254" layer="1"/>
+<wire x1="8.89" y1="34.29" x2="10.16" y2="35.56" width="0.254" layer="1"/>
+<wire x1="10.16" y1="35.56" x2="13.335" y2="35.56" width="0.254" layer="1"/>
 </signal>
 <signal name="RS232-RX">
 <contactref element="JP1" pad="3"/>
@@ -2821,11 +2822,11 @@ design rules under a new name.</description>
 <contactref element="SJ1" pad="1"/>
 <wire x1="18.5928" y1="33.02" x2="18.5928" y2="34.9528" width="0.254" layer="1"/>
 <wire x1="18.5928" y1="34.9528" x2="21.59" y2="37.95" width="0.254" layer="1"/>
-<wire x1="22.6822" y1="33.02" x2="22.6822" y2="35.56" width="0.254" layer="1"/>
-<wire x1="22.6822" y1="35.56" x2="22.6822" y2="36.8578" width="0.254" layer="1"/>
+<wire x1="22.6822" y1="33.02" x2="22.6822" y2="34.29" width="0.254" layer="1"/>
+<wire x1="22.6822" y1="34.29" x2="22.6822" y2="36.8578" width="0.254" layer="1"/>
 <wire x1="22.6822" y1="36.8578" x2="21.59" y2="37.95" width="0.254" layer="1"/>
 <contactref element="TP4" pad="P$1"/>
-<wire x1="21.59" y1="35.56" x2="22.6822" y2="35.56" width="0.254" layer="1"/>
+<wire x1="21.59" y1="34.29" x2="22.6822" y2="34.29" width="0.254" layer="1"/>
 </signal>
 <signal name="DTR">
 <contactref element="R2" pad="1"/>
@@ -2917,12 +2918,12 @@ design rules under a new name.</description>
 <approved hash="19,1,34b35915c280ef5e"/>
 <approved hash="5,1,00e29a31f566a8c4"/>
 <approved hash="5,1,96c7619b58b129ef"/>
-<approved hash="19,1,10cc058d39fe9247"/>
 <approved hash="19,1,85e8fe6cc2ce8129"/>
+<approved hash="19,1,10cc058d39fe9247"/>
 <approved hash="19,1,0a6fb8ca37026cca"/>
 <approved hash="5,1,01e29b19e48eb904"/>
-<approved hash="5,1,c4df82bc91286d62"/>
 <approved hash="19,1,d8562bcbb07dc1f7"/>
+<approved hash="5,1,c4df82bc91286d62"/>
 <approved hash="19,1,a274ebe6bb5b0651"/>
 <approved hash="5,1,01e29b1d9c8ac104"/>
 </errors>
