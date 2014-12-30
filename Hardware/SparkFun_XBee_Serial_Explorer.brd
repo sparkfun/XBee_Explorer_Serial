@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -2362,7 +2362,7 @@ design rules under a new name.</description>
 </element>
 <element name="LOGO3" library="SparkFun-Aesthetics" package="SFE_LOGO_FLAME_.1" value="SFE_LOGO_FLAME.1_INCH" x="6.604" y="1.3208"/>
 <element name="TP1" library="SparkFun-Passives" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="25.4" y="19.05"/>
-<element name="TP2" library="SparkFun-Passives" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="24.13" y="17.78"/>
+<element name="TP2" library="SparkFun-Passives" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="24.13" y="16.51"/>
 <element name="TP3" library="SparkFun-Passives" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="8.89" y="34.29"/>
 <element name="TP4" library="SparkFun-Passives" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="21.59" y="34.29"/>
 <element name="TP5" library="SparkFun-Passives" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="16.51" y="30.48"/>
@@ -2634,9 +2634,10 @@ design rules under a new name.</description>
 <via x="26.67" y="15.875" extent="1-16" drill="0.508"/>
 <wire x1="10.82" y1="15.94" x2="6.92" y2="15.94" width="0.254" layer="1"/>
 <wire x1="6.92" y1="15.94" x2="5.08" y2="17.78" width="0.254" layer="1"/>
-<wire x1="26.67" y1="15.875" x2="6.985" y2="15.875" width="0.254" layer="16"/>
-<wire x1="6.985" y1="15.875" x2="5.08" y2="17.78" width="0.254" layer="16"/>
+<wire x1="7.62" y1="15.24" x2="5.08" y2="17.78" width="0.254" layer="16"/>
 <wire x1="27.051" y1="16.256" x2="26.67" y2="15.875" width="0.254" layer="1"/>
+<wire x1="7.62" y1="15.24" x2="26.035" y2="15.24" width="0.254" layer="16"/>
+<wire x1="26.035" y1="15.24" x2="26.67" y2="15.875" width="0.254" layer="16"/>
 </signal>
 <signal name="DIO3">
 <contactref element="U2" pad="17"/>
@@ -2800,7 +2801,7 @@ design rules under a new name.</description>
 <contactref element="TP2" pad="P$1"/>
 <wire x1="24.765" y1="22.6" x2="24.765" y2="20.32" width="0.254" layer="1"/>
 <wire x1="24.765" y1="20.32" x2="24.13" y2="19.685" width="0.254" layer="1"/>
-<wire x1="24.13" y1="19.685" x2="24.13" y2="17.78" width="0.254" layer="1"/>
+<wire x1="24.13" y1="19.685" x2="24.13" y2="16.51" width="0.254" layer="1"/>
 </signal>
 <signal name="RS232-DTR">
 <contactref element="JP1" pad="4"/>

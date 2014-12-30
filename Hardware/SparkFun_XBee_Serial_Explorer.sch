@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -23823,7 +23823,6 @@ board to DTE configuration.</text>
 <instance part="C6" gate="G$1" x="58.42" y="157.48"/>
 <instance part="JP1" gate="G$1" x="93.98" y="119.38"/>
 <instance part="JP4" gate="G$1" x="127" y="157.48" smashed="yes">
-<attribute name="VALUE" x="114.3" y="156.21" size="1.778" layer="96"/>
 <attribute name="NAME" x="120.65" y="167.64" size="1.778" layer="95"/>
 </instance>
 <instance part="D1" gate="G$1" x="139.7" y="165.1" smashed="yes">
@@ -23838,7 +23837,6 @@ board to DTE configuration.</text>
 <instance part="GND10" gate="1" x="134.62" y="152.4"/>
 <instance part="F1" gate="G$1" x="152.4" y="165.1" smashed="yes">
 <attribute name="NAME" x="149.86" y="168.148" size="1.778" layer="95"/>
-<attribute name="VALUE" x="165.862" y="162.56" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="P+5" gate="G$1" x="226.06" y="170.18"/>
 <instance part="GND11" gate="1" x="83.82" y="109.22"/>
@@ -23853,7 +23851,9 @@ board to DTE configuration.</text>
 </instance>
 <instance part="R5" gate="G$1" x="200.66" y="144.78" rot="R90"/>
 <instance part="R6" gate="G$1" x="210.82" y="160.02" rot="R90"/>
-<instance part="S3" gate="G$1" x="129.54" y="33.02"/>
+<instance part="S3" gate="G$1" x="129.54" y="33.02" smashed="yes">
+<attribute name="NAME" x="127" y="35.56" size="1.778" layer="95"/>
+</instance>
 <instance part="GND14" gate="1" x="139.7" y="20.32"/>
 <instance part="R7" gate="G$1" x="40.64" y="83.82"/>
 <instance part="U$1" gate="G$1" x="148.844" y="7.366"/>
@@ -23866,7 +23866,9 @@ board to DTE configuration.</text>
 <instance part="SJ2" gate="G$1" x="71.12" y="111.76" smashed="yes" rot="MR180">
 <attribute name="NAME" x="73.66" y="111.379" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="S1" gate="G$1" x="167.64" y="170.18"/>
+<instance part="S1" gate="G$1" x="167.64" y="170.18" smashed="yes">
+<attribute name="NAME" x="165.1" y="178.308" size="1.778" layer="95"/>
+</instance>
 <instance part="LOGO3" gate="G$1" x="149.86" y="35.56"/>
 <instance part="TP1" gate="G$1" x="48.26" y="93.98" smashed="yes" rot="R180">
 <attribute name="NAME" x="43.18" y="93.98" size="1.778" layer="95" rot="R180"/>
@@ -24086,7 +24088,6 @@ board to DTE configuration.</text>
 <pinref part="JP2" gate="G$1" pin="10"/>
 </segment>
 <segment>
-<wire x1="50.8" y1="35.56" x2="53.34" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="40.64" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
