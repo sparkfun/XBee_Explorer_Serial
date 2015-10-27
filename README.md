@@ -3,7 +3,7 @@ SparkFun XBee Explorer Serial
 
 ![SparkFun XBee Explorer Serial](https://cdn.sparkfun.com//assets/parts/1/0/3/7/7/13225-01.jpg)
 
-[*SparkFun XBee Explorer Serial (WRL-09111)*](https://www.sparkfun.com/products/9111)
+[*SparkFun XBee Explorer Serial (WRL-13225)*](https://www.sparkfun.com/products/9111)
 
 This is a RS232 to serial base unit for the XBee line. 
 It works with all XBee units, including Series 1, Series 2.5, standard and Pro versions.
