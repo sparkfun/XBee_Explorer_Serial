@@ -1,7 +1,7 @@
 SparkFun XBee Explorer Serial
 ==============================
 
-![SparkFun XBee Explorer Serial](https://cdn.sparkfun.com//assets/parts/2/5/0/5/09111-01.jpg)
+![SparkFun XBee Explorer Serial](https://cdn.sparkfun.com//assets/parts/1/0/3/7/7/13225-01.jpg)
 
 [*SparkFun XBee Explorer Serial (WRL-09111)*](https://www.sparkfun.com/products/9111)
 
