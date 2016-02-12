@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -137,7 +137,7 @@
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
-<schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
+<schematic xreflabel="%F%N/%S" xrefpart="/%S">
 <libraries>
 <library name="SparkFun">
 <packages>
@@ -23767,9 +23767,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="109.22" y1="124.46" x2="109.22" y2="185.42" width="0.1524" layer="95" style="shortdash"/>
 <wire x1="109.22" y1="124.46" x2="248.92" y2="124.46" width="0.1524" layer="95" style="shortdash"/>
 <wire x1="147.32" y1="35.56" x2="147.32" y2="60.96" width="0.1524" layer="95" style="shortdash"/>
-<text x="238.76" y="7.62" size="2.54" layer="94">v13</text>
-<text x="165.354" y="11.43" size="2.54" layer="94">Nathan Seidle</text>
-<text x="170.18" y="7.62" size="2.54" layer="94">Toni Klopfenstein</text>
+<text x="238.76" y="7.62" size="2.54" layer="94">v14</text>
+<text x="172.974" y="11.43" size="2.54" layer="94">Nathan Seidle</text>
+<text x="175.26" y="7.62" size="2.54" layer="94">Toni Klopfenstein</text>
 <text x="78.74" y="139.7" size="1.778" layer="97">Jumpers are set 
 to DCE configuration. 
 Switch both to change 
