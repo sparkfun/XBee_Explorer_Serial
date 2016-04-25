@@ -23,12 +23,13 @@ Documentation
 
 Product Versions
 ----------------
-* [WRL-13225](https://www.sparkfun.com/products/13225)- Version 1.3. Currently for sale. 
+* [WRL-13225](https://www.sparkfun.com/products/13225)- Version 1.4. Currently for sale. 
 * [RWRL-09111] (https://www.sparkfun.com/products/retired/9111)- Version 1.2. Retired. 
 
 GitHub Version History
 ---------------
-* [v1.3](https://github.com/sparkfun/XBee_Explorer_Serial/tree/v1.3) - Version 1.3. Current files. 
+* [v1.4](https://github.com/sparkfun/XBee_Explorer_Serial/tree/v1.4) - Version 1.4. Current files. 
+* [v1.3](https://github.com/sparkfun/XBee_Explorer_Serial/tree/v1.3) - Version 1.3. Retired.  
 * [v1.2](https://github.com/sparkfun/XBee_Explorer_Serial/tree/v1.2) - Version 1.2. Retired. 
 
 License Information
