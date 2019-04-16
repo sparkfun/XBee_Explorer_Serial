@@ -24,7 +24,7 @@ Documentation
 Product Versions
 ----------------
 * [WRL-13225](https://www.sparkfun.com/products/13225)- Version 1.4. Currently for sale. 
-* [RWRL-09111] (https://www.sparkfun.com/products/retired/9111)- Version 1.2. Retired. 
+* [RWRL-09111](https://www.sparkfun.com/products/retired/9111)- Version 1.2. Retired. 
 
 GitHub Version History
 ---------------
